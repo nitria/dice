@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: radial-gradient(transparent, red);
 }
 
 .container .dices {
@@ -21,7 +22,6 @@ body {
   height: 200px;
   box-sizing: border-box;
   transform-style: preserve-3d;
-  transform: rotateY(-8deg) rotateX(-8deg);
   margin: 0 50px;
 }
 
@@ -33,7 +33,6 @@ body {
   justify-content: center;
   position: absolute;
   border-radius: 5px;
-  border: 1px solid rgb(180, 10, 10);
   background: red;
 }
 
@@ -179,11 +178,18 @@ body {
 
 #btn {
   margin-top: 150px;
-  padding: 5px 20px;
-  font-size: 2em;
+  padding: 10px 30px;
+  font-size: 3em;
   cursor: pointer;
-  background: blue;
+  background: red;
   color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#btn:hover {
+  background: rgb(204, 47, 8);
 }
 
 /*RESPONSIVE*/
